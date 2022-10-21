@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import com.google.android.material.snackbar.Snackbar
@@ -17,9 +18,8 @@ import com.example.myapplication.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
-    var counter : Int = 0;
+    var counter: Int = 0;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,12 +45,17 @@ class MainActivity : AppCompatActivity() {
             else -> super.onOptionsItemSelected(item)
         }
     }
+
     fun registerClick(view: View) {
         var myButton: Button = view as Button
         var text = myButton.text as String
-        counter += text.subSequence(text.indexOfFirst {it == 'x'} + 1, text.length)
-                .toString().toInt()
+        counter += text.subSequence(text.indexOfFirst { it == 'x' } + 1, text.length)
+            .toString().toInt()
         findViewById<TextView>(R.id.score).text = counter.toString()
+    }
+
+    fun changeScreen(view: View) {
+        startActivity(Intent(this, SecondScreenActivity::class.java))
     }
 
 }

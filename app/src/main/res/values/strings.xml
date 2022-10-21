@@ -1,11 +1,21 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="action_settings">Settings</string>
+    <string name="click">click</string>
+    <string name="x1">x1</string>
+    <string name="x2">x2</string>
+    <string name="x5">x5</string>
+    <string name="x10">x10</string>
+    <string name="x50">x50</string>
     <string name="clickx1">clickx1</string>
     <string name="clickx2">clickx2</string>
     <string name="clickx5">clickx5</string>
     <string name="clickx10">clickx10</string>
     <string name="clickx50">clickx50</string>
+    <string name="unlockx2">unlock powerful button x2</string>
+    <string name="unlockx5">unlock powerful button x5</string>
+    <string name="unlockx10">unlock powerful button x10</string>
+    <string name="unlockx50">unlock powerful button x50</string>
     <string name="shopBttnTxt">visit shop</string>
 
 
