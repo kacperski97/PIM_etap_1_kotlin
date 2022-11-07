@@ -2,6 +2,7 @@
     <string name="app_name">My Application</string>
     <string name="action_settings">Settings</string>
     <string name="id_prefix">tapx</string>
+    <string name="upgrade_info">This upgrade costs: </string>
     <string name="click">click</string>
     <string name="clickx1">clickx1</string>
     <string name="clickx2">clickx2</string>

@@ -13,8 +13,9 @@ import com.example.myapplication.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    companion object{
-        var counter: Int = 0;
+
+    companion object {
+        var counter: Int = 0
     }
 
 
@@ -44,15 +45,26 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun registerClick(view: View) {
-        var myButton: Button = view as Button
-        var text = myButton.text as String
+        val myButton: Button = view as Button
+        val text = myButton.text as String
         counter += text.subSequence(text.indexOfFirst { it == 'x' } + 1, text.length)
             .toString().toInt()
         findViewById<TextView>(R.id.score).text = counter.toString()
     }
 
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        if((requestCode == 1) and (resultCode == RESULT_OK)) {
+            var buttons: ArrayList<Int>? = data?.getIntegerArrayListExtra("toUnlock")
+            if (buttons != null) {
+                for (buttonId in buttons){
+                    findViewById<Button>(buttonId).isEnabled = true
+                }
+            }
+        }
+    }
+
     fun changeScreen(view: View) {
-        startActivity(Intent(this, SecondScreenActivity::class.java))
+        startActivityForResult(Intent(this, SecondScreenActivity::class.java), 1)
     }
 
 }

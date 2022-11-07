@@ -55,8 +55,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="156dp"
         android:layout_marginTop="196dp"
-        android:text="@string/backBttn"
         android:onClick="goBack"
+        android:text="@string/backBttn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
