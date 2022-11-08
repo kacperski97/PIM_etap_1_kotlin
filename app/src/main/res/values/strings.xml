@@ -1,20 +1,22 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="action_settings">Settings</string>
-    <string name="id_prefix">tapx</string>
-    <string name="upgrade_info">This upgrade costs: </string>
-    <string name="click">click</string>
-    <string name="clickx1">clickx1</string>
-    <string name="clickx2">clickx2</string>
-    <string name="clickx5">clickx5</string>
-    <string name="clickx10">clickx10</string>
-    <string name="clickx50">clickx50</string>
-    <string name="unlockx2">unlock powerful button x2</string>
-    <string name="unlockx5">unlock powerful button x5</string>
-    <string name="unlockx10">unlock powerful button x10</string>
-    <string name="unlockx50">unlock powerful button x50</string>
-    <string name="shopBttnTxt">visit shop</string>
-    <string name="backBttn">go back</string>
-
+    <string name="score_display">Points: </string>
+    <string name="shop_warning">"Not enough points</string>
+    <string name="Button">x1</string>
+    <string name="BetterButton">x5</string>
+    <string name="SuperButton">x10</string>
+    <string name="MegaButton">x50</string>
+    <string name="GigaButton">x100</string>
+    <string name="textButton">Button</string>
+    <string name="textBetterButton">Better Button</string>
+    <string name="textSuperButton">Super Button</string>
+    <string name="textMegaButton">Mega Button</string>
+    <string name="textGigaButton">Giga Button</string>
+    <string name="unlockBetter">Buy Better Button for 25 points</string>
+    <string name="unlockSuper">Buy Super Button for 100 points</string>
+    <string name="unlockMega">Buy Mega Button for 1000 points</string>
+    <string name="unlockGiga">Buy Giga Button for 5000 points</string>
+    <string name="shopBttnTxt">shop</string>
 
 </resources>

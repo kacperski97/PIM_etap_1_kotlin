@@ -25,90 +25,82 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <Button
-        android:id="@+id/tapx2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="504dp"
-        android:layout_marginEnd="36dp"
-        android:enabled="false"
-        android:onClick="registerClick"
-        android:text="@string/clickx2"
-        app:layout_constraintEnd_toStartOf="@+id/tapx5"
-        app:layout_constraintHorizontal_bias="0.93"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/tapx50"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:enabled="false"
-        android:onClick="registerClick"
-        android:text="@string/clickx50"
+    <LinearLayout
+        android:layout_width="278dp"
+        android:layout_height="540dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="100dp"
+        android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toEndOf="@+id/tapx10"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.855" />
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <Button
-        android:id="@+id/tapx5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:enabled="false"
-        android:onClick="registerClick"
-        android:text="@string/clickx5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.919"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tapx2" />
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
 
-    <Button
-        android:id="@+id/tapx10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="584dp"
-        android:enabled="false"
-        android:onClick="registerClick"
-        android:text="@string/clickx10"
-        app:layout_constraintBottom_toBottomOf="@+id/tapx50"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.3"
-        app:layout_constraintStart_toStartOf="parent" />
+        <Button
+            android:id="@+id/Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:onClick="registerClick"
+            android:tag="@string/Button"
+            android:text="@string/textButton" />
 
-    <Button
-        android:id="@+id/tapx1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="48dp"
-        android:onClick="registerClick"
-        android:text="@string/clickx1"
-        app:layout_constraintEnd_toStartOf="@+id/tapx2"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tapx2" />
+        <Button
+            android:id="@+id/BetterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:enabled="false"
+            android:onClick="registerClick"
+            android:tag="@string/BetterButton"
+            android:text="@string/textBetterButton"
+            app:layout_constraintBottom_toTopOf="@+id/tapx5"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/score"
-        android:layout_width="92dp"
-        android:layout_height="63dp"
-        android:layout_marginTop="104dp"
-        android:layout_marginEnd="264dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/SuperButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:enabled="false"
+            android:onClick="registerClick"
+            android:tag="@string/SuperButton"
+            android:text="@string/textSuperButton" />
 
-    <Button
-        android:id="@+id/visitShop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="340dp"
-        android:onClick="changeScreen"
-        android:text="@string/shopBttnTxt"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/MegaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:enabled="false"
+            android:onClick="registerClick"
+            android:tag="@string/MegaButton"
+            android:text="@string/textMegaButton" />
+
+
+        <Button
+            android:id="@+id/GigaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:enabled="false"
+            android:onClick="registerClick"
+            android:tag="@string/GigaButton"
+            android:text="@string/textGigaButton" />
+
+        <Button
+            android:id="@+id/visitShop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:onClick="changeScreen"
+            android:text="@string/shopBttnTxt" />
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

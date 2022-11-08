@@ -5,60 +5,58 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/unlockx5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:onClick="unlockItem"
-        android:text="@string/unlockx5"
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="307dp"
+        android:layout_height="393dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="168dp"
+        android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/unlockx2" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/unlockx2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="280dp"
-        android:onClick="unlockItem"
-        android:text="@string/unlockx2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
 
-    <Button
-        android:id="@+id/unlockx50"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
-        android:onClick="unlockItem"
-        android:text="@string/unlockx50"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/unlockx10" />
+        <Button
+            android:id="@+id/unlockSuper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:onClick="unlockItem"
+            android:tag="@string/SuperButton"
+            android:text="@string/unlockSuper" />
 
-    <Button
-        android:id="@+id/unlockx10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:onClick="unlockItem"
-        android:text="@string/unlockx10"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/unlockx5" />
+        <Button
+            android:id="@+id/unlockBetter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:onClick="unlockItem"
+            android:tag="@string/BetterButton"
+            android:text="@string/unlockBetter" />
 
-    <Button
-        android:id="@+id/back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="196dp"
-        android:onClick="goBack"
-        android:text="@string/backBttn"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/unlockGiga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:onClick="unlockItem"
+            android:tag="@string/GigaButton"
+            android:text="@string/unlockGiga" />
+
+        <Button
+            android:id="@+id/unlockMega"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:onClick="unlockItem"
+            android:tag="@string/MegaButton"
+            android:text="@string/unlockMega" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
